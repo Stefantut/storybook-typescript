@@ -1,10 +1,11 @@
 import Grid from "./components/Grid/Grid";
 import Box from "./components/Box/Box";
+import GridRuler from "./components/GridRuler/GridRuler";
 
 function App() {
   return (
-    <div className="App" style={{ margin: "14px" }}>
-      <p>Aaapppppppppp</p>
+    <div className="App" style={{ margin: "14px", position: "relative" }}>
+      <GridRuler spacing="sm" />
       <Grid container spacing="lg">
         <Grid item cols={6}>
           <Box>box 1</Box>
