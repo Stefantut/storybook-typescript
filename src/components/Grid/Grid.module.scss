@@ -4,6 +4,8 @@ $spacing: (
   "lg": 24px,
 );
 
+$justifyContent: (flex-start, flex-end, center, space-between);
+
 .Grid {
   &_container {
     display: flex;
@@ -40,4 +42,10 @@ $spacing: (
   // &_spacing_lg > &_item {
   //     padding: 24px;
   // }
+
+  @each $value in $justifyContent {
+    &_justifyContent_#{$value} {
+      justify-content: $value;
+    }
+  }
 }
