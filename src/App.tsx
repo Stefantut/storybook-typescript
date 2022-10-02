@@ -1,4 +1,3 @@
-import React from "react";
 import Grid from "./components/Grid/Grid";
 import Box from "./components/Box/Box";
 
@@ -7,13 +6,13 @@ function App() {
     <div className="App">
       <p>Aaapppppppppp</p>
       <Grid container>
-        <Grid item>
+        <Grid item cols={1}>
           <Box>box 1</Box>
         </Grid>
-        <Grid item>
+        <Grid item cols={3}>
           <Box>box 2</Box>
         </Grid>
-        <Grid item>
+        <Grid item cols={5}>
           <Box>box 3</Box>
         </Grid>
       </Grid>
