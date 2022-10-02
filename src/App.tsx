@@ -3,17 +3,20 @@ import Box from "./components/Box/Box";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ margin: "14px" }}>
       <p>Aaapppppppppp</p>
-      <Grid container>
-        <Grid item cols={1}>
+      <Grid container spacing="lg">
+        <Grid item cols={6}>
           <Box>box 1</Box>
         </Grid>
-        <Grid item cols={3}>
+        <Grid item cols={6}>
           <Box>box 2</Box>
         </Grid>
-        <Grid item cols={5}>
+        <Grid item cols={6}>
           <Box>box 3</Box>
+        </Grid>
+        <Grid item cols={6}>
+          <Box>box 4</Box>
         </Grid>
       </Grid>
     </div>
