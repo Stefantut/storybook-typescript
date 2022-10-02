@@ -5,6 +5,7 @@ $spacing: (
 );
 
 $justifyContent: (flex-start, flex-end, center, space-between);
+$alignItems: (flex-start, flex-end, center);
 
 .Grid {
   &_container {
@@ -46,6 +47,11 @@ $justifyContent: (flex-start, flex-end, center, space-between);
   @each $value in $justifyContent {
     &_justifyContent_#{$value} {
       justify-content: $value;
+    }
+  }
+  @each $value in $alignItems {
+    &_alignItems_#{$value} {
+      align-items: $value;
     }
   }
 }
